@@ -1,6 +1,6 @@
 exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
-  key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
+  user: process.env.BROWSERSTACK_USERNAME,
+  key: process.env.BROWSERSTACK_ACCESS_KEY,
 
   services: [
     [
@@ -9,7 +9,7 @@ exports.config = {
         buildIdentifier: '${BUILD_NUMBER}',
         browserstackLocal: true, 
         opts: { forcelocal: false, localIdentifier: "webdriverio-appium-app-browserstack-android-repo" },
-        app: process.env.BROWSERSTACK_APP_PATH || './examples/LocalSample.apk'
+        app: process.env.BROWSERSTACK_APP_PATH || 'C:/Users/Kshitij.Karandikar/Documents/Github/mx-native-testing-appium/android/MxShopee/mxshopee-appstore-release.apk'
       }
     ]
   ],
@@ -29,7 +29,7 @@ exports.config = {
 
   updateJob: false,
   specs: [
-    './examples/run-local-test/specs/local_test.js'
+    './MxShopee/local-tests/specs/local_test.js'
   ],
   exclude: [],
 
