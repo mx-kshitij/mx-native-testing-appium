@@ -29,7 +29,8 @@ exports.config = {
 
   updateJob: false,
   specs: [
-    './MxShopee/local-tests/specs/local_test.js'
+    './MxShopee/local-tests/specs/local_test.js',
+    './MxShopee/local-tests/specs/login_test.js'
   ],
   exclude: [],
 

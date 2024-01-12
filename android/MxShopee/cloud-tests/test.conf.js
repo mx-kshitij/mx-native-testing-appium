@@ -44,7 +44,8 @@ exports.config = {
 
   updateJob: false,
   specs: [
-    './MxShopee/run-sample-test/specs/single_test.js'
+    './MxShopee/cloud-tests/specs/single_test.js',
+    './MxShopee/cloud-tests/specs/login_test.js'
   ],
   exclude: [],
 
