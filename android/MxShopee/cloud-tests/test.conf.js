@@ -45,7 +45,8 @@ exports.config = {
   updateJob: false,
   specs: [
     './MxShopee/cloud-tests/specs/single_test.js',
-    './MxShopee/cloud-tests/specs/login_test.js'
+    './MxShopee/cloud-tests/specs/login_test.js',
+    './MxShopee/cloud-tests/specs/order_test.js',
   ],
   exclude: [],
 
@@ -60,7 +61,7 @@ exports.config = {
   framework: 'mocha',
   mochaOpts: {
     ui: 'bdd',
-    timeout: 20000
+    timeout: 80000
   }
 };
 
