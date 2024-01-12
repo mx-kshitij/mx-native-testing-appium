@@ -30,6 +30,11 @@ describe('Order Product', () => {
         await addressLine1Box.waitForDisplayed({ timeout: 30000 });
         await addressLine1Box.setValue('Address 1');
 
+        var buyNowBtn = await $('android=new UiSelector().resourceId("actionButton4")');
+        await buyNowBtn.waitForDisplayed({ timeout: 30000 });
+        await buyNowBtn.click();
+        
+
         assert(true);
     })
 });
