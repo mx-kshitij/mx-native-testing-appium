@@ -9,14 +9,14 @@ exports.config = {
         buildIdentifier: '${BUILD_NUMBER}',
         browserstackLocal: true, 
         opts: { forcelocal: false, localIdentifier: "webdriverio-appium-app-browserstack-android-repo" },
-        app: process.env.BROWSERSTACK_APP_PATH || 'C:/Users/Kshitij.Karandikar/Documents/Github/mx-native-testing-appium/android/MxShopee/mxshopee-appstore-release.apk'
+        app: process.env.BROWSERSTACK_APP_PATH || './MxShopee/mxshopee-appstore-release.apk'
       }
     ]
   ],
 
   capabilities: [{
     'bstack:options': {
-      projectName: "BrowserStack Samples",
+      projectName: "MxShoppe",
       buildName: 'browserstack build',
       sessionName: 'BStack local webdriverio-appium',
       deviceName: 'Google Pixel 3',
